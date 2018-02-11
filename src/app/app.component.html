@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <br/>
+
+  <h3>
+    Player 1 symbol: "X"
+  </h3>
+  <h3>
+    Player 2 symbol: "O"
+  </h3>
+
+  <table id='board'>
+    <tr>
+      <td (click)='clickedOn(0,0)'>{{boardCells[0][0].getCellValue()}}</td>
+      <td (click)='clickedOn(0,1)'>{{boardCells[0][1].getCellValue()}}</td>
+      <td (click)='clickedOn(0,2)'>{{boardCells[0][2].getCellValue()}}</td>
+    </tr>
+    <tr>
+      <td (click)='clickedOn(1,0)'>{{boardCells[1][0].getCellValue()}}</td>
+      <td (click)='clickedOn(1,1)'>{{boardCells[1][1].getCellValue()}}</td>
+      <td (click)='clickedOn(1,2)'>{{boardCells[1][2].getCellValue()}}</td>
+    </tr>
+    <tr>
+      <td (click)='clickedOn(2,0)'>{{boardCells[2][0].getCellValue()}}</td>
+      <td (click)='clickedOn(2,1)'>{{boardCells[2][1].getCellValue()}}</td>
+      <td (click)='clickedOn(2,2)'>{{boardCells[2][2].getCellValue()}}</td>
+    </tr>
+  </table>
+
+  <br/>
+
+  <input type="button" (click)="resetBoard()" value="Reset Board" />
+
+  <br/>
+  <br/>
+
+  <h3 style="color:blue;">
+    {{statusMessage}}
+  </h3>
+
+</div>
