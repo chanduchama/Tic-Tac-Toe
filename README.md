@@ -18,7 +18,9 @@ Application will be available at the following URL
 http://localhost:4200/
 
 ## Built With
-Angular 5 and Typescript
+
+* [Angular 5](https://angular.io/)
+* [HTML & CSS from Coder Byte](https://coderbyte.com/tutorial/create-a-tic-tac-toe-game-using-html-css-and-jquery)
 
 ## Author
 Sarath Chandra Chama
